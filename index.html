@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div id="map-container">
+    <div id="map"></div>
+</div>
+
+<main class="main-content">
+    <div class="sticky-controls">
+        <div class="brand-header" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h1 class="brand-title">Nokta<span>.</span></h1>
+                <p class="brand-tagline">Her stopper letingen etter halalmat, Punktum!</p>
+            </div>
+            <button class="chip" onclick="toggleInfo()">Info</button>
+        </div>
+        <div class="search-row">
+            <input type="text" id="searchBox" class="search-box" placeholder="Søk by, sted eller craving...">
+            <button class="surprise-btn" onclick="surpriseMe()">🎲 Spinn</button>
+        </div>
+        
+        <div class="filter-row">
+            <button class="chip active" onclick="filter('Alle')">Alle steder</button>
+            <button class="chip" onclick="filter('IRN')">🛡️ Kun IRN</button>
+            <button class="chip" onclick="filter('Top10')">Nokta. topp 10</button>
+            <button class="chip" onclick="filter('Trender')">TikTok-Trender</button>
+            <button class="chip" onclick="filter('Nattmat')">Bil-Nattmat</button>
+            <button class="chip" onclick="filter('Sitteplasser')">Sitteplasser</button>
+            <button class="chip" onclick="filter('FastFood')">Fast Food</button>
+            <button class="chip" onclick="filter('Midtosten')">Tyrkisk & Midtøsten</button>
+            <button class="chip" onclick="filter('Asian')">Asian & Wok</button>
+            <button class="chip" onclick="filter('Indisk')">Indisk & Pakistansk</button>
+            <button class="chip" onclick="filter('TakeAway')">Take Away & Catering</button>
+            <button class="chip" onclick="filter('Dessert')">Dessert & Kos</button>
+        </div>
+    </div>
+
+    <div class="feed" id="feedGrid"></div>
+</main>
+
+<div class="community-bar">
+    <p style="margin:0; font-size:0.8rem; color: var(--text-muted); font-weight:600;">Fant du et nytt sted eller en feil status?</p>
+    <button class="action-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfGjzqGM4s695hln5NVyi0ild18o1qw4f0Y_ilZLgkFtPwqKQ/viewform', '_blank')">Send tips</button>
+</div>
+
+<div id="infoModal" class="info-modal">
+    <div class="info-modal-content">
+        <div class="modal-header">
+            <h2>Om Nokta.</h2>
+            <button class="close-modal" onclick="toggleInfo()">✖ Lukk</button>
+        </div>
+        <div class="modal-body">
+            <h3>Hva er Nokta?</h3>
+            <p>Nokta betyr punktum. Vi startet dette prosjektet fordi vi var lei av å bruke timevis på å Google, sjekke kommentarfelt og ringe restauranter for å finne ut om maten faktisk er halal. Her stopper letingen. Punktum.</p>
+            
+            <h3>Hva er Halal-mat?</h3>
+            <p>Halal betyr "tillatt" på arabisk. For at kjøtt skal regnes som halal, må dyret være slaktet på en human og rituell måte. I Nokta. sorterer vi steder etter tre nivåer:</p>
+            <ul>
+                <li><strong>🛡️ Sertifisert:</strong> Offisielt godkjent av IRN eller lignende organer.</li>
+                <li><strong>🤝 Muslimsk eier:</strong> Drevet av muslimer med stort fokus på halal-mat.</li>
+                <li><strong>🍽️ Uavhengig:</strong> Steder som bekrefter at de kjøper inn og håndterer halal-kjøtt separat.</li>
+            </ul>
+
+            <hr style="border: 0; border-top: 2px dashed var(--border); margin: 1.5rem 0;">
+
+            <h3>⚠️ Viktig info & ditt ansvar</h3>
+            <p>Nokta. er utelukkende en informasjonsside basert på den informasjonen vi har samlet inn per i dag. Siden folk har ulike tolkninger av hva som er halal, tilbyr vi kun en oversikt for å gjøre letingen enklere. <strong>Du er selv ansvarlig</strong> for å dobbeltsjekke og bekrefte med restauranten at maten møter dine krav før du spiser.</p>
+
+            <h3>🤝 Bli med å bygge Nokta.</h3>
+            <p>Dette er en åpen plattform for alle, og vi trenger din hjelp for å gjøre den enda bedre og sikrere! Finner du feil, vet om nye steder, eller har bilder av sertifikater som beviser at et sted er halal? Bruk "Send tips"-knappen i bunnen av skjermen. Sammen bygger vi Norges beste oversikt!</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
