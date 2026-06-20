@@ -442,9 +442,10 @@ body {
 }
 /* Styler den nye, lille info-knappen med en liten i */
 .brand-header .info-btn {
-    font-weight: 600 !important; /* Gjør i-en litt tynnere og mer elegant */
-    font-size: 0.8rem !important; /* Gjør selve i-en mindre */
-    width: 26px !important; /* Gjør den hvite sirkelen litt mindre også */
+    text-transform: none !important; /* Tvinger bokstaven til å holde seg liten! */
+    font-weight: 600 !important; 
+    font-size: 0.85rem !important; 
+    width: 26px !important; 
     height: 26px !important;
     padding: 0 !important;
     display: flex !important;
