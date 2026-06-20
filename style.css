@@ -457,3 +457,9 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.08) !important; /* En bitteliten, tynn kant rundt */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important; /* En veldig svak skygge, akkurat som de andre knappene */
 }
+/* Gjør Spinn-knappen litt mindre og mer kompakt */
+.surprise-btn {
+    padding: 10px 20px !important; /* Reduserer tykkelsen rundt teksten */
+    font-size: 0.9rem !important;  /* Gjør teksten og stjernene ørlite mindre */
+    height: auto !important;       /* Sørger for at den tilpasser seg den nye høyden */
+}
