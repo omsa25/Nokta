@@ -81,7 +81,7 @@ const places = [
 ];
 
 // 2. STYRINGSMOTOR FOR LOKASJON OG FILTER
-let userLocation = { lat: 59.9285, lng: 10.9592 }; 
+let userLocation = { lat: 59.9122, lng: 10.7603 };
 let activeCat = "Alle";
 let map, markerGroup;
 
