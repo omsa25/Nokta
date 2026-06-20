@@ -463,3 +463,9 @@ body {
     font-size: 0.9rem !important;  /* Gjør teksten og stjernene ørlite mindre */
     height: auto !important;       /* Sørger for at den tilpasser seg den nye høyden */
 }
+/* Perfekt balanse på Spinn-knappen: beholder høyden, men gir litt mer bredde */
+.surprise-btn {
+    padding: 10px 24px !important; /* Økt fra 20 til 24 for mer luft på sidene */
+    font-size: 0.9rem !important;  
+    height: auto !important;       
+}
