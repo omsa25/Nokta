@@ -436,3 +436,7 @@ body {
 .brand-tagline {
     max-width: 100% !important;
 }
+/* Sørger for at slagordet blir kursiv */
+.brand-tagline {
+    font-style: italic;
+}
