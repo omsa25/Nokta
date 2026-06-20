@@ -476,3 +476,11 @@ body {
     height: 36px !important;
     font-size: 1.1rem !important;
 }
+/* Sørger for at de nye dropdown-knappene matcher chip-stilen perfekt */
+.select-filter {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: inherit;
+    cursor: pointer;
+    padding-right: 12px !important; /* Ekstra rom for pilen */
+}
