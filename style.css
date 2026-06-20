@@ -440,9 +440,9 @@ body {
 .brand-tagline {
     font-style: italic;
 }
-/* Styler den nye, lille info-knappen med en liten i */
+/* Styler den nye, lille info-knappen med en liten i og kodespråkets egne farger */
 .brand-header .info-btn {
-    text-transform: none !important; /* Tvinger bokstaven til å holde seg liten! */
+    text-transform: none !important;
     font-weight: 600 !important; 
     font-size: 0.85rem !important; 
     width: 26px !important; 
@@ -452,6 +452,7 @@ body {
     align-items: center !important;
     justify-content: center !important;
     border-radius: 50% !important;
-    background-color: #ffffff !important;
-    color: var(--text-dark) !important;
+    background-color: var(--bg-card) !important; /* Samme lyse bakgrunnsfarge som kategoriene */
+    color: var(--text-main) !important; /* Samme mørke tekstfarge som kategoriene */
+    border: 1px solid var(--border) !important; /* Gir den den samme tynne, fine kanten rundt */
 }
