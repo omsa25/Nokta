@@ -440,3 +440,18 @@ body {
 .brand-tagline {
     font-style: italic;
 }
+/* Styler den nye, lille info-knappen */
+.brand-header .info-btn {
+    font-weight: 800 !important;
+    font-family: monospace, sans-serif !important;
+    font-size: 0.95rem !important;
+    width: 28px !important;
+    height: 28px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important; /* Gjør den helt rund */
+    background-color: #ffffff !important; /* Beholder den fine hvitfargen */
+    color: var(--text-dark) !important; /* Gjør i-en mørkegrå/svart */
+}
