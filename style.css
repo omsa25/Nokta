@@ -469,3 +469,10 @@ body {
     font-size: 0.9rem !important;  
     height: auto !important;       
 }
+/* Gjør de små runde knappene (TikTok, Insta, Del) mer fingervennlige */
+.card-actions .action-btn, 
+.card-footer .circle-btn { /* Bruk den klassen de har i koden din */
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.1rem !important;
+}
