@@ -440,7 +440,7 @@ body {
 .brand-tagline {
     font-style: italic;
 }
-/* Styler den nye, lille info-knappen med en liten i og kodespråkets egne farger */
+/* Styler info-knappen slik at den matcher IRN- og Indisk-knappene perfekt */
 .brand-header .info-btn {
     text-transform: none !important;
     font-weight: 600 !important; 
@@ -452,7 +452,8 @@ body {
     align-items: center !important;
     justify-content: center !important;
     border-radius: 50% !important;
-    background-color: var(--bg-card) !important; /* Samme lyse bakgrunnsfarge som kategoriene */
-    color: var(--text-main) !important; /* Samme mørke tekstfarge som kategoriene */
-    border: 1px solid var(--border) !important; /* Gir den den samme tynne, fine kanten rundt */
+    background-color: #ffffff !important; /* Gjør den hvit og fin som de andre knappene */
+    color: #2f3e36 !important; /* Mørk, matchende tekstfarge */
+    border: 1px solid rgba(0, 0, 0, 0.08) !important; /* En bitteliten, tynn kant rundt */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important; /* En veldig svak skygge, akkurat som de andre knappene */
 }
