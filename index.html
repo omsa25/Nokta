@@ -12,7 +12,7 @@
         <div class="brand-header" style="display: flex; justify-content: space-between; align-items: center;">
             <div>
                 <h1 class="brand-title">Nokta<span>.</span></h1>
-                <p class="brand-tagline">Her stopper letingen etter halalmat, punktum!</span></p>
+                <p class="brand-tagline">Her stopper letingen etter halalmat, punktum!</p>
             </div>
             <button class="chip info-btn" onclick="toggleInfo()">i</button>
         </div>
@@ -21,19 +21,27 @@
             <button class="surprise-btn" onclick="surpriseMe()">✨ Spinn</button>
         </div>
         
-        <div class="filter-row">
+        <div class="filter-row" style="display: flex; gap: 8px; overflow: visible;">
             <button class="chip active" onclick="filter('Alle')">Alle steder</button>
-            <button class="chip" onclick="filter('IRN')">Kun IRN</button>
-            <button class="chip" onclick="filter('Top10')">Nokta. topp 10</button>
-            <button class="chip" onclick="filter('Trender')">TikTok-Trender</button>
-            <button class="chip" onclick="filter('Nattmat')">Bil-Nattmat</button>
-            <button class="chip" onclick="filter('Sitteplasser')">Sitteplasser</button>
-            <button class="chip" onclick="filter('FastFood')">Fast Food</button>
-            <button class="chip" onclick="filter('Midtosten')">Tyrkisk & Midtøsten</button>
-            <button class="chip" onclick="filter('Asian')">Asian & Wok</button>
-            <button class="chip" onclick="filter('Indisk')">Indisk & Pakistansk</button>
-            <button class="chip" onclick="filter('TakeAway')">Take Away & Catering</button>
-            <button class="chip" onclick="filter('Dessert')">Dessert & Kos</button>
+            
+            <select class="chip select-filter" onchange="filter(this.value); this.selectedIndex=0;">
+                <option value="" disabled selected>Utforsk ▾</option>
+                <option value="IRN">Kun IRN</option>
+                <option value="Top10">Nokta. topp 10</option>
+                <option value="Trender">TikTok-Trender</option>
+                <option value="Nattmat">Bil-Nattmat</option>
+                <option value="Sitteplasser">Sitteplasser</option>
+            </select>
+
+            <select class="chip select-filter" onchange="filter(this.value); this.selectedIndex=0;">
+                <option value="" disabled selected>Cravings ▾</option>
+                <option value="FastFood">Fast Food</option>
+                <option value="Midtosten">Tyrkisk & Midtøsten</option>
+                <option value="Asian">Asian & Wok</option>
+                <option value="Indisk">Indisk & Pakistansk</option>
+                <option value="TakeAway">Take Away & Catering</option>
+                <option value="Dessert">Dessert & Kos</option>
+            </select>
         </div>
     </div>
 
