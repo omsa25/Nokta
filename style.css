@@ -432,3 +432,7 @@ body {
 .modal-body li { 
     margin-bottom: 0.4rem; 
 }
+/* Sørger for at slagordet blir bredt nok til å romme hele første linje */
+.brand-tagline {
+    max-width: 100% !important;
+}
